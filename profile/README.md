@@ -1,207 +1,189 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Dar-Platform/Dar-Front/main/docs/images/dar-banner-ar.png" alt="دار — منصة إدارة العقارات الذكية" width="800" />
+  <img src="./dar-banner-ar.png" alt="دار — منصة إدارة العقارات الذكية" width="800" />
 </p>
 
-<h1 align="center">Dar Platform</h1>
+# Dar Platform
 
-<p align="center">
-  <strong>Smart property management for owners, tenants, and HOA communities.</strong><br />
-  RTL-first · Bilingual (Arabic / English) · Role-based dashboards
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Angular-21.2-DD0031?style=flat-square&logo=angular&logoColor=white" alt="Angular 21" />
-  <img src="https://img.shields.io/badge/.NET-9.0-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET 9" />
-  <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Tailwind-4.3-38B2AC?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Location-Egypt-CE1126?style=flat-square" alt="Egypt" />
-</p>
-
-<p align="center">
-  <a href="#about">About</a> ·
-  <a href="#repositories">Repositories</a> ·
-  <a href="#platform">Platform</a> ·
-  <a href="#architecture">Architecture</a> ·
-  <a href="#getting-started">Getting Started</a> ·
-  <a href="#contributing">Contributing</a>
-</p>
+> Smart property management platform for owners, tenants, and HOA communities — RTL-first, bilingual (Arabic / English), and built for modern real estate in Egypt and beyond.
 
 ---
 
-## About
+## 🚀 About Us
 
-**Dar** (دار — *home* in Arabic) is an end-to-end property management platform for residential and commercial real estate. It connects property owners, tenants, and homeowners associations (HOA) through dedicated dashboards, shared workflows, and a public marketplace.
+**Dar** (دار — *home* in Arabic) is a property management platform developed under the [Dar-Platform](https://github.com/Dar-Platform) organization.
 
-| | |
-|---|---|
-| **Focus** | Leasing, billing, maintenance, HOA governance, digital vault, tenant reputation |
-| **Audience** | Property owners · Tenants · HOA administrators |
-| **Languages** | Arabic (default, RTL) and English (LTR) |
-| **Organization** | [Dar-Platform](https://github.com/Dar-Platform) · Egypt |
+Brief introduction about the organization:
 
----
-
-## Repositories
-
-| Repository | Stack | Description |
-|------------|-------|-------------|
-| [**Dar-Front**](https://github.com/Dar-Platform/Dar-Front) | Angular 21 · Tailwind CSS 4 · TypeScript | Web application — UI, routing, i18n, role dashboards |
-| [**Dar-Server**](https://github.com/Dar-Platform/Dar-Server) | ASP.NET Core 9 · EF Core · SQL Server | REST API — auth, properties, payments, HOA, and business logic |
-
-Frontend and backend are maintained as **separate repositories** with aligned branches, releases, and API contracts.
+- **Who we are** — A product-focused team building an end-to-end digital platform for residential and commercial property management.
+- **What problems we solve** — Fragmented leasing workflows, manual billing, poor tenant–owner communication, and limited tools for HOA governance and community decisions.
+- **Mission and vision** — To give every stakeholder in the property ecosystem — owners, tenants, and HOA administrators — one trusted place to manage homes, payments, contracts, and community life.
 
 ---
 
-## Platform
+## 🎯 Our Mission
 
-Dar serves three primary roles through tailored experiences and shared services such as messaging, contracts, and payments.
+Our mission is to simplify property management through intuitive, accessible, and secure software.
 
-```mermaid
-flowchart TB
-  subgraph Roles["User roles"]
-    O["Owner<br/>Portfolio · Listings · Tenants · Billing · Vault"]
-    T["Tenant<br/>Payments · Utilities · Maintenance · Dar Score"]
-    H["HOA<br/>Buildings · Decisions · Community fund"]
-  end
+**Goals and values:**
 
-  subgraph Shared["Shared services"]
-    M["Marketplace"]
-    MSG["Messaging"]
-    C["Contracts"]
-    P["Payments"]
-  end
-
-  M --> O
-  M --> T
-  O --> Shared
-  T --> Shared
-  H --> Shared
-```
-
-### Owner
-
-Portfolio overview, property management, rental listings, tenant records, billing and invoices, maintenance marketplace, and a digital document vault.
-
-### Tenant
-
-Rent payments, smart utilities tracking, maintenance requests, and **Dar Score** — a tenant reputation system.
-
-### HOA
-
-Building management, community decisions and voting, and shared fund administration.
-
-### Public
-
-Property marketplace, property detail pages, and authentication flows (login, register, OTP, onboarding).
+- Deliver a **bilingual, RTL-first** experience that works naturally in Arabic and English
+- Build **role-based dashboards** tailored to owners, tenants, and HOA communities
+- Follow **Clean Architecture** and maintainable engineering practices on both frontend and backend
+- Provide **transparent workflows** for leasing, billing, maintenance, and community decisions
+- Ship a platform that scales from individual landlords to managed portfolios and HOA buildings
 
 ---
 
-## Architecture
+## 🏢 Products & Projects
 
-```mermaid
-flowchart LR
-  subgraph Client["Dar-Front"]
-    SPA["Angular SPA<br/>localhost:4200"]
-  end
+### Featured Projects
 
-  subgraph Server["Dar-Server"]
-    API["ASP.NET Core Web API<br/>localhost:3000/api"]
-    DB[(SQL Server)]
-  end
-
-  SPA -->|"REST / OpenAPI"| API
-  API --> DB
-```
-
-| Layer | Project / area | Responsibility |
-|-------|----------------|----------------|
-| **Presentation** | `Dar-Front/dar-app` | Standalone Angular components, lazy routes, custom i18n, Material Design 3 |
-| **API** | `Dar.API` | HTTP endpoints, OpenAPI / Swagger, Scalar reference |
-| **Application** | `Dar.Application` | Services, DTOs, validation |
-| **Domain** | `Dar.Domain` | Entities and enums |
-| **Infrastructure** | `Dar.Infrastructure` | Persistence, identity, JWT authentication |
-
-**Local development:** run the API and the Angular app side by side — frontend `apiUrl` points to `http://localhost:3000/api`.
+| Project | Description | Tech Stack |
+|----------|-------------|------------|
+| [**Dar-Front**](https://github.com/Dar-Platform/Dar-Front) | Angular web app — marketplace, auth, role dashboards, i18n | Angular 21, TypeScript, Tailwind CSS 4 |
+| [**Dar-Server**](https://github.com/Dar-Platform/Dar-Server) | REST API — auth, properties, payments, HOA, and business logic | ASP.NET Core 9, EF Core, SQL Server |
+| **Dar Marketplace** | Public property listings and rental applications | Angular, REST API |
+| **Dar Score** | Tenant reputation and trust scoring | Angular, .NET |
 
 ---
 
-## Getting Started
+## 🛠️ Technology Stack
 
-### Frontend — [Dar-Front](https://github.com/Dar-Platform/Dar-Front)
+### Backend
 
-```bash
-git clone https://github.com/Dar-Platform/Dar-Front.git
-cd Dar-Front/dar-app
-npm install
-npm start
-```
+- ASP.NET Core 9 Web API
+- Entity Framework Core 9
+- SQL Server
+- JWT authentication
+- REST APIs · OpenAPI / Swagger
 
-Open [http://localhost:4200](http://localhost:4200).
+### Frontend
 
-### Backend — [Dar-Server](https://github.com/Dar-Platform/Dar-Server)
+- Angular 21 (standalone components, lazy routes)
+- TypeScript 5.9
+- Tailwind CSS 4 · Material Design 3
+- Vitest · Custom i18n (Arabic / English)
 
-```bash
-git clone https://github.com/Dar-Platform/Dar-Server.git
-cd Dar-Server
-dotnet restore
-dotnet run --project Dar.API
-```
+### DevOps & Tools
 
-Requires [.NET 9 SDK](https://dotnet.microsoft.com/download) and SQL Server. Configure the connection string in `Dar.API/appsettings.json`.
-
-In Development, the API exposes OpenAPI at `/openapi/v1.json` and Swagger UI at `/swagger`.
-
-### Prerequisites summary
-
-| Component | Requirements |
-|-----------|--------------|
-| Frontend | Node.js 20+, npm 11.x |
-| Backend | .NET 9 SDK, SQL Server |
-| Full stack | Both repos running locally (ports 4200 + 3000) |
-
-For detailed setup, routing, and development guides, see each repository’s README.
+- Git · GitHub
+- GitHub Actions *(planned)*
+- Docker *(planned)*
+- Azure *(planned)*
 
 ---
 
-## Contributing
+## 📂 Repository Structure
 
-We use a consistent Git workflow across **Dar-Front** and **Dar-Server**:
-
-| Branch | Purpose |
-|--------|---------|
-| `main` | Production-ready code |
-| `dev` | Integration — default target for pull requests |
-| `feature/*`, `fix/*`, `hotfix/*` | Short-lived work branches |
-
-1. Branch from `dev` using `feature/`, `fix/`, or `chore/` prefixes
-2. Open a pull request targeting `dev`
-3. Ensure CI checks pass (build + tests)
-4. For full-stack features, prefer merging **Dar-Server** first, then **Dar-Front**
-
-Release tags follow semantic versioning (e.g. `v1.0.0`) and are aligned across repos when possible.
+| Repository | Purpose |
+|------------|---------|
+| [**Dar-Server**](https://github.com/Dar-Platform/Dar-Server) | Backend API — `Dar.API`, `Dar.Application`, `Dar.Domain`, `Dar.Infrastructure` |
+| [**Dar-Front**](https://github.com/Dar-Platform/Dar-Front) | Angular frontend — `dar-app/` SPA |
+| [**Dar-Docs**](https://github.com/Dar-Platform) *(optional)* | Shared API specs and architecture decisions |
+| [**Dar-Infra**](https://github.com/Dar-Platform) *(optional)* | Docker, CI/CD, and deployment configs |
+| **`.github`** | Organization profile and shared GitHub configuration |
 
 ---
 
-## Status
+## 🌟 Development Standards
 
-| Area | Status |
-|------|--------|
-| Frontend UI, routing, i18n | Active — mock data and dev tooling in place |
-| Backend API | Active — auth and core services in development |
-| Front ↔ back integration | In progress via `environment.apiUrl` |
+- Clean Architecture
+- SOLID Principles
+- Repository Pattern
+- Code Reviews
+- Git Flow Workflow
+- Automated Testing (Vitest · xUnit)
 
 ---
 
-<p align="center">
-  <sub>
-    <a href="https://github.com/Dar-Platform/Dar-Front">Dar-Front</a>
-    ·
-    <a href="https://github.com/Dar-Platform/Dar-Server">Dar-Server</a>
-    ·
-    Built with Angular · .NET · TypeScript
-  </sub>
-</p>
+## 🔄 Git Workflow
 
-<p align="center">
-  <sub>Proprietary — Dar Platform ©</sub>
-</p>
+### Branch Strategy
+
+- `main` → Production-ready code
+- `dev` → Integration branch (default PR target)
+- `staging` → Optional pre-production QA
+- `feature/*` → New features
+- `fix/*` → Bug fixes
+- `hotfix/*` → Emergency production fixes
+
+### Pull Request Process
+
+1. Create feature branch from `dev`
+2. Commit changes with clear, imperative messages
+3. Push branch to GitHub
+4. Open Pull Request targeting `dev`
+5. Code review and CI checks (build + tests)
+6. Merge into `dev` — release to `main` when ready
+
+> **Full-stack features:** merge **Dar-Server** first, then **Dar-Front**.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from team members and collaborators.
+
+### How to Contribute
+
+1. Clone the repository ([Dar-Front](https://github.com/Dar-Platform/Dar-Front) or [Dar-Server](https://github.com/Dar-Platform/Dar-Server))
+2. Create a feature branch from `dev` (e.g. `feature/owner-vault-upload`)
+3. Commit your changes and run tests locally
+4. Submit a Pull Request targeting `dev`
+
+See each repository README for setup instructions and coding conventions.
+
+---
+
+## 👥 Team
+
+| Name | Role |
+|------|------|
+| Ahmed Omar Darwish | Founder & Full Stack .NET Developer |
+| *Team Member* | Software Engineer |
+
+---
+
+## 📚 Documentation
+
+- [Dar-Front README](https://github.com/Dar-Platform/Dar-Front) — UI setup, routes, architecture, i18n
+- [Dar-Server README](https://github.com/Dar-Platform/Dar-Server) — API setup, solution structure, OpenAPI
+- [Git & GitHub Structure](https://github.com/Dar-Platform/Dar-Front/blob/main/docs/GIT-STRUCTURE.md) — Branches, PR workflow, front ↔ back coordination
+- API Documentation — Swagger UI at `/swagger` (Development)
+
+---
+
+## 📈 Roadmap
+
+### Current Focus
+
+- SaaS platform development (Owner, Tenant, HOA dashboards)
+- Backend API integration with Dar-Front
+- Authentication, properties, and core domain services
+- User experience improvements (RTL, accessibility, Material Design 3)
+
+### Future Goals
+
+- Mobile applications (iOS / Android)
+- AI-assisted property insights and maintenance
+- Multi-tenant architecture
+- Cloud-native infrastructure and CI/CD pipelines
+
+---
+
+## 📞 Contact
+
+- **GitHub:** [https://github.com/Dar-Platform](https://github.com/Dar-Platform)
+- **Location:** Egypt
+- **Email:** *contact@dar-platform.com* *(update with your official address)*
+- **LinkedIn:** *Add your company page URL*
+
+---
+
+## ⭐ Support
+
+If you find our projects useful, consider giving them a star and following our organization on GitHub.
+
+---
+
+© 2026 Dar Platform. All rights reserved.
