@@ -40,7 +40,7 @@ Our mission is to simplify property management through intuitive, accessible, an
 
 | Project | Description | Tech Stack |
 |----------|-------------|------------|
-| [**Dar-Front**](https://github.com/Dar-Platform/Dar-Front) | Angular web app — marketplace, auth, role dashboards, i18n | Angular 21, TypeScript, Tailwind CSS 4 |
+| [**Dar-Front**](https://github.com/Dar-Platform/Dar-Front) | Angular web app — marketplace, auth, role dashboards, i18n | Angular 22, TypeScript, Tailwind CSS 4 |
 | [**Dar-Server**](https://github.com/Dar-Platform/Dar-Server) | REST API — auth, properties, payments, HOA, and business logic | ASP.NET Core 9, EF Core, SQL Server |
 | **Dar Marketplace** | Public property listings and rental applications | Angular, REST API |
 | **Dar Score** | Tenant reputation and trust scoring | Angular, .NET |
@@ -59,7 +59,7 @@ Our mission is to simplify property management through intuitive, accessible, an
 
 ### Frontend
 
-- Angular 21 (standalone components, lazy routes)
+- Angular 22 (standalone components, lazy routes)
 - TypeScript 5.9
 - Tailwind CSS 4 · Material Design 3
 - Vitest · Custom i18n (Arabic / English)
@@ -137,10 +137,91 @@ See each repository README for setup instructions and coding conventions.
 
 ## 👥 Team
 
-| Name | Role |
-|------|------|
-| Ahmed Omar Darwish | Founder & Full Stack .NET Developer |
-| *Team Member* | Software Engineer |
+**ITI Graduation Project R2-25/26** · .NET Full Stack · **Damanhour Branch**
+
+Graduation project team building the **Dar** platform under the [Dar-Platform](https://github.com/Dar-Platform) organization.
+
+**Supervisor:** [ENG Omnia El-Sheikh](https://github.com/OmniaEl-Sheikh) · [LinkedIn](https://www.linkedin.com/in/omnia-elsheikh/)
+
+### Developers
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/AhmedOmarDarwish">
+        <img src="https://github.com/AhmedOmarDarwish.png?size=100" width="100" alt="Ahmed Omar Darwish"/>
+      </a>
+      <br />
+      <strong>Ahmed Omar Darwish</strong>
+      <br />
+      Software Engineer
+      <br />
+      <a href="https://github.com/AhmedOmarDarwish">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/ahmed-omar-darwish/">LinkedIn</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Amr-Elmaghraby">
+        <img src="https://github.com/Amr-Elmaghraby.png?size=100" width="100" alt="Amr Ayman Elmaghraby"/>
+      </a>
+      <br />
+      <strong>Amr Ayman Elmaghraby</strong>
+      <br />
+      Software Engineer
+      <br />
+      <a href="https://github.com/Amr-Elmaghraby">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/amr-elmaghraby/">LinkedIn</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/fouda12345">
+        <img src="https://github.com/fouda12345.png?size=100" width="100" alt="Ahmed Mohamed Fouda"/>
+      </a>
+      <br />
+      <strong>Ahmed Mohamed Fouda</strong>
+      <br />
+      Software Engineer
+      <br />
+      <a href="https://github.com/fouda12345">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/ahmedfouda32/">LinkedIn</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/ahmedgaddoo21">
+        <img src="https://github.com/ahmedgaddoo21.png?size=100" width="100" alt="Ahmed Karam Gad"/>
+      </a>
+      <br />
+      <strong>Ahmed Karam Gad</strong>
+      <br />
+      Software Engineer
+      <br />
+      <a href="https://github.com/ahmedgaddoo21">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/ahmedkaramgad/">LinkedIn</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/AdhamSakoury">
+        <img src="https://github.com/AdhamSakoury.png?size=100" width="100" alt="Adham Raafat Anwar"/>
+      </a>
+      <br />
+      <strong>Adham Raafat Anwar</strong>
+      <br />
+      Software Engineer
+      <br />
+      <a href="https://github.com/AdhamSakoury">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/adham-raafat-a6549b228/">LinkedIn</a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/mohamed-ahmed-shaker-288310200/">
+        <img src="https://ui-avatars.com/api/?name=Mohamed+Shaker&size=100&background=512BD4&color=fff" width="100" alt="Mohamed Shaker"/>
+      </a>
+      <br />
+      <strong>Mohamed Shaker</strong>
+      <br />
+      Software Engineer
+      <br />
+      <a href="https://www.linkedin.com/in/mohamed-ahmed-shaker-288310200/">LinkedIn</a>
+    </td>
+  </tr>
+</table>
 
 ---
 
