@@ -150,7 +150,7 @@ Graduation project team building the **Dar** platform under the [Dar-Platform](h
   <br />
   <strong>ENG Omnia El-Sheikh</strong>
   <br />
-  Project Supervisor · Full-Stack Developer
+  Project Supervisor
   <br />
   <a href="https://github.com/OmniaEl-Sheikh">GitHub</a> ·
   <a href="https://www.linkedin.com/in/omnia-elsheikh/">LinkedIn</a>
