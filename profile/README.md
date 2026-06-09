@@ -141,7 +141,20 @@ See each repository README for setup instructions and coding conventions.
 
 Graduation project team building the **Dar** platform under the [Dar-Platform](https://github.com/Dar-Platform) organization.
 
-**Supervisor:** [ENG Omnia El-Sheikh](https://github.com/OmniaEl-Sheikh) · [LinkedIn](https://www.linkedin.com/in/omnia-elsheikh/)
+### Supervisor
+
+<p align="center">
+  <a href="https://github.com/OmniaEl-Sheikh">
+    <img src="https://github.com/OmniaEl-Sheikh.png?size=120" width="120" alt="ENG Omnia El-Sheikh"/>
+  </a>
+  <br />
+  <strong>ENG Omnia El-Sheikh</strong>
+  <br />
+  Project Supervisor · Full-Stack Developer
+  <br />
+  <a href="https://github.com/OmniaEl-Sheikh">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/omnia-elsheikh/">LinkedIn</a>
+</p>
 
 ### Developers
 
